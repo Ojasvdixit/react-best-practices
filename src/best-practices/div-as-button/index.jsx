@@ -8,13 +8,18 @@ function DivAsButton() {
   }
 
   return (
-    <div onClick={() => {}} className="card green div-btn">
+    <div className="card green div-btn">
       <h1>🔆 div as button</h1>
+
       <input type="text" placeholder="enter your name" />
-      <button onClick={handleStart}>Start</button>
-      <div role="button" onClick={handleStop}>
+
+      <button type="button" onClick={handleStart}>
+        Start
+      </button>
+
+      <button type="button" onClick={handleStop}>
         Stop
-      </div>
+      </button>
     </div>
   );
 }

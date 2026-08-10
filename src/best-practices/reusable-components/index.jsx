@@ -11,7 +11,7 @@ function ReusableComponents() {
     <div>
       <h4>Reusable Components</h4>
 
-      <Button size={Button.Size.Medium} label={"Click Me"} />
+      <Button size={Button.Size.Large} label={"Click Me"} />
       <Text text={"Sample Text"} />
     </div>
   );

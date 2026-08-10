@@ -16,4 +16,15 @@ function Button({ label, onClick, size = "medium" }) {
 
 Button.Size = Size;
 
+// Function JavaScript me object bhi hota hai.
+// So tum function ke upar property attach kar sakte ho.
+
+/** function greet() {}
+
+ greet.message = "Hello";
+
+ console.log(greet.message);
+
+ */
+
 export default Button;

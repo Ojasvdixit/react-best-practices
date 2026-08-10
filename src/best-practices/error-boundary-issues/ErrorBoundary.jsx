@@ -2,7 +2,7 @@ import React from "react";
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
-    super(props);
+    super(props);   //! super means calling the constructor of the parent class (React.Component) to initialize the component's state and props. It allows the ErrorBoundary class to inherit properties and methods from React.Component.
     this.state = { hasError: false };
   }
 

@@ -28,3 +28,25 @@ class ErrorBoundary extends React.Component {
 }
 
 export default ErrorBoundary;
+
+//! Flow of ErrorBoundary
+
+// App renders
+// ↓
+// ErrorBoundary renders Footer
+// ↓
+// Footer crashes
+// ↓
+// React finds nearest ErrorBoundary
+// ↓
+// React calls getDerivedStateFromError()
+// ↓
+// hasError becomes true
+// ↓
+// React calls componentDidCatch()
+// ↓
+// ErrorBoundary re-renders
+// ↓
+// Fallback UI appears
+// ↓
+// Rest of app keeps working

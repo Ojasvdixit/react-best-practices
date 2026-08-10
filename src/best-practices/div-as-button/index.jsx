@@ -20,6 +20,18 @@ function DivAsButton() {
       <button type="button" onClick={handleStop}>
         Stop
       </button>
+     //! Example 2
+         <div className="text-white" onClick={()=>{
+            console.log('outer div ')
+          }
+        }> div
+          <button className="text-white" onClick={(e)=>{
+              // e.stopPropagation()
+            console.log('inner button')
+          }}>button
+            
+          </button>
+         </div>
     </div>
   );
 }

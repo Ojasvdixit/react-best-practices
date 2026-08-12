@@ -28,6 +28,7 @@ import DependencyArray from "./best-practices/dependency-array";
 import { createStore, applyMiddleware } from "redux";
 
 import { Provider } from "react-redux";
+import StatesConcept from "./best-practices/practice/states-concept";
 const store = createStore(function () {
   return () => {};
 });
@@ -43,7 +44,8 @@ function App() {
         <span className="by">By - Rahul Mishra (Frontend Master)</span>
       </div>
 
-      <UseMeNot />
+      {/* <UseMeNot /> */}
+      <StatesConcept/>
 
       {/* <FetchData /> */}
 

@@ -24,14 +24,14 @@ const StatesConcept = () => {
     setCount(count=>count+1);
 
   }
-  //  if(count>0){
-  //   console.log('count',count)
-  //  }
-  //  else{
-  //   useEffect(()=>{
-  //     console.log('useEffect count',count)
-  //   },[])
-  //  }
+   if(count>0){
+    console.log('count',count)
+   }
+   else{
+    useEffect(()=>{
+      console.log('useEffect count',count)
+    },[])
+   }
 
 
   return (
